@@ -20,7 +20,7 @@ bot.remove_command('help')
 
 @bot.command(pass_context=True)
 async def help(message):
-        embedVar = discord.Embed(title="Nordic + Baltic Bot Help Command", description = "Please do not spam these commands or misuse them!", color=0x00ff00)
+        embedVar = discord.Embed(title="Nordic + Baltic Bot Commands", description = "Please do not spam these commands or misuse them!", color=#9400D3)
         embedVar.add_field(name="Support Commands", value="support, ip, coords, tpll, schematics, builder, waypoint.", inline=False)
         embedVar.add_field(name="Other", value="welcome, about.", inline=False)
         embedVar.add_field(name="Admin Commands", value="In Development.", inline=False)
@@ -68,7 +68,7 @@ async def aboutbot(ctx):
 
 @bot.command(pass_context=True)
 async def welcome(message):
-        embedVar = discord.Embed(title="Welcome to the Nordic + Baltic Built Team!", description = "Our built team focuses on Sweden, Denmark, Norway, Iceland, Estonia, Lithuania and Iatvia", color=0x00ff00)
+        embedVar = discord.Embed(title="Welcome to the Nordic + Baltic Built Team!", description = "Our built team focuses on Sweden, Denmark, Norway, Iceland, Estonia, Lithuania and Iatvia", color=#00BFFF)
         embedVar.add_field(name="About", value="To find more infomation make sure you read #faq and #rules, as it will tell you some important infomation.", inline=False)
         embedVar.add_field(name="Support", value="If you need any support feel free to ask in #support and one of our friendly staff will answer your questions.", inline=False)
         embedVar.add_field(name="What is BTE", value="Built The Earth is a massive project that is building the whole earth in Minecraft, if you want to learn more make sure you join the official discord server: https://discord.gg/PYPtHMf", inline=False)
