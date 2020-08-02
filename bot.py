@@ -8,7 +8,7 @@ from discord import Embed
 
 #Place your token below!
 
-token  = 'NzMyNTY4MzE4MjU4NzA4NTUw.Xw2faQ.3y5PRcrBZaQWtQzLhVQc0HBILEA'
+token  = 'PLACE_YOUR_TOKEN_HERE'
 
 bot = commands.Bot(command_prefix=config_prefix, description=config_description, owner_id=config_owner_id)
 
