@@ -1,43 +1,35 @@
-# wafflebot
+# Nordic + Baltic BTE Bot
 
 ## About
 
-wafflebot is a multifunctional Discord bot written in discord.py. wafflebot is public, but it's reccomended that you host your own instance the bot won't accomodate custom log channels, etc. on the public instance. See section below for self-hosting information. wafflebot is developed by waffles#9298. If you need support with the bot or self-hosting, join the [support server](https://discord.gg/bfJ8UsT)
-
-### Links
-
-[Support Server](https://discord.gg/bfJ8UsT)  
-[Invite the Bot to Your Server](https://discordapp.com/api/oauth2/authorize?client_id=582380938667884548&permissions=8&scope=bot)  
-[View Bot Documentation Externally](https://ben-waffles.github.io/wafflebot)  
+Nordic + Baltic bot is a python built bot, that was mainly designed for the Built Team! If you would like to join the build team use this link! [Here](https://discord.gg/euuq7ae)    
 
 ## Commands
 
-[represents optional arguements] (represents required arguements)
+Use =help to learn more!
 
 ### Basic Commands
+=ping
+=help
+=about
+=aboutbot
 
 #### ping
 
 The ping command returns bot response time  
-Usage: `-ping`
+Usage: `=ping`
 
-#### Commands for Creating Polls: poll and mpoll
+#### How to create a poll:
 
-You can create polls using the bot. Invoking the following commands makes the bot add reactions to the invoking message to allow for east voting
-
+Use =poll to start a poll!
 ##### poll
 
 Creates a poll by adding 👍 and 👎 reactions  
-Usage: `-poll [content/question of poll]`
-
-##### mpoll
-
-Creates a poll by adding 👍, 👎 and 🤷 reactions  
-Usage: `-poll [content/question of poll]`
+Usage: `=poll [Poll about]`
 
 ## Self-Hosting
 
-Self-hosting your own instance of wafflebot is very simple first, install the needed Prequisites .
+Self-hosting your own instance of Nordic + Baltic is very easy you just have to dowload the repo and add your token.
   
 ### Prerequisites
 
@@ -71,7 +63,7 @@ You'll need to replace another important variable. Locate the `bot.py` file and 
 Then, open terminal/powershell in the bot's folder (navigate to the folder --> shift+right-click) and run the bot.py file with `python bot.py`  
 The bot should be up and running!
   
-If you're having issues with self-hosting, join the [support server](https://discord.gg/NfrvPfm) for assistance
+If you're having issues with self-hosting we can sadly not help you with that!
 
 ## Contributing
 
@@ -79,10 +71,11 @@ If you're having issues with self-hosting, join the [support server](https://dis
 
 You can contribute to the project by making a pull request. I'll only merge bug fixes and minor tweaks to the source code, no major command or feature amendments will be merged.
 
-### Documentation Contributions
 
-Major additions or amendments to the documentation this README file, the HTML version of the documentation, or the wiki will typically be merged if they're sensical and helpful. If you can, reflect any changes to this file on the index.html file in the docs folder on this repository if possible and applicable.
+## Copy Right Notice
+
+You can not sell or make a profit out of this bot! This is a open sourced bot made for our Build Team.
 
 ### Contributors
 
-There are no contributors aside from myself at this point in time, but in the event that someone aside from me contributes to the bot's source code or documentation, their and any other contributor's names will be listed here
+There are currently not going to be any contributers at this point of time!
