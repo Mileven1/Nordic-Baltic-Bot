@@ -8,7 +8,7 @@ from discord import Embed
 
 #Place your token below!
 
-token  = 'PLACE_YOUR_TOKEN_HERE'
+token  = 'NzMyNTY4MzE4MjU4NzA4NTUw.Xw2faQ.wL38YuulHhq7JkRDvF1CtbntwSY'
 
 bot = commands.Bot(command_prefix=config_prefix, description=config_description, owner_id=config_owner_id)
 
@@ -60,7 +60,7 @@ async def waypoint(ctx):
 
 @bot.command(pass_context=True)
 async def about(ctx):
-    await ctx.send("Our IP is currently: **GAME-PL-01.MTXSERV.COM:27070**! Do .status to check the server stats...")
+    await ctx.send("To find more infomation make sure you read #faq and #rules, as it will tell you some important infomation.")
 
 @bot.command(pass_context=True)
 async def aboutbot(ctx):
