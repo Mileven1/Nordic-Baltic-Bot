@@ -2,7 +2,7 @@
 
 ## About
 
-Nordic + Baltic bot is a python built bot, that was mainly designed for the Built Team! If you would like to join the build team use this link! [Here](https://discord.gg/euuq7ae)    
+Nordic + Baltic bot is a python built bot, that was mainly designed for the Nordic + Baltic Build Team! If you would like to join the build team use this link! [Here](https://discord.gg/euuq7ae)    
 
 ## Commands
 
@@ -30,7 +30,7 @@ Usage: `=poll [Poll about]`
 ## Self-Hosting
 
 Self-hosting your own instance of Nordic + Baltic is very easy you just have to dowload the repo and add your token.
-  
+
 ### Prerequisites
 
 - [Python](https://www.python.org/downloads/) (with pip, so install the latest version)
@@ -62,7 +62,7 @@ You'll need to replace another important variable. Locate the `bot.py` file and 
 
 Then, open terminal/powershell in the bot's folder (navigate to the folder --> shift+right-click) and run the bot.py file with `python bot.py`  
 The bot should be up and running!
-  
+
 If you're having issues with self-hosting we can sadly not help you with that!
 
 ## Contributing
