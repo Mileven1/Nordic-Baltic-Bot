@@ -8,7 +8,7 @@ from discord import Embed
 
 #Place your token below!
 
-token  = 'NzMyNTY4MzE4MjU4NzA4NTUw.Xw2faQ.wL38YuulHhq7JkRDvF1CtbntwSY'
+token  = 'NzMyNTY4MzE4MjU4NzA4NTUw.Xw2faQ.Os_hKJVIli9YVDPyoY3Y-KAuEVE'
 
 bot = commands.Bot(command_prefix=config_prefix, description=config_description, owner_id=config_owner_id)
 
@@ -20,9 +20,11 @@ bot.remove_command('help')
 
 @bot.command(pass_context=True)
 async def help(message):
-        embedVar = discord.Embed(title="Nordic + Baltic Bot Commands", description = "Please do not spam these commands or misuse them!", color=0x9400D3)
-        embedVar.add_field(name="Support Commands", value="support, ip, coords, tpll, schematics, builder, waypoint.", inline=False)
-        embedVar.add_field(name="Other", value="welcome, about.", inline=False)
+        embedVar = discord.Embed(title="Nordic + Baltic Bot Commands", description = "Please do not spam these commands or misuse them! Use = for each command.", color=0x9400D3)
+        embedVar.add_field(name="Basic", value="welcome, about,applications, guide, documentation.", inline=False)
+        embedVar.add_field(name="Support Commands", value="support, ip, coords, tpll, schematics, builder, waypoint, download, measure.", inline=False)
+        embedVar.add_field(name="Other", value="aboutbot, ping.", inline=False)
+        embedVar.add_field(name="Poll", value="poll, mpoll.", inline=False)
         embedVar.add_field(name="Admin Commands", value="In Development.", inline=False)
         await message.channel.send(embed=embedVar)
 
@@ -56,11 +58,36 @@ async def builder(ctx):
 async def waypoint(ctx):
     await ctx.send("https://imgur.com/a/9LpBZlA")
 
+@bot.command(pass_context=True)
+async def measure(ctx):
+    await ctx.send("https://gyazo.com/d58446cec35cc504bb36b749346041a9 Credit: BTE Server")
+
+@bot.command(pass_context=True)
+async def guide(ctx):
+    await ctx.send("https://docs.google.com/document/d/1L7fzjEC3KnxSA-1OKdTy_4xBpbkG-4aTQ1ogXlqRJPA/edit")
+
+@bot.command(pass_context=True)
+async def documentation(ctx):
+    await ctx.send("https://bte.rtfd.io/")
+
+@bot.command(pass_context=True)
+async def applications(ctx):
+    await ctx.send("Please visit #applications for staff roles or use this weblink to join the build team: buildtheearth.net/bte-Nordic and press join!")
+
+@bot.command(pass_context=True)
+async def download(message):
+        embedVar = discord.Embed(title="Mod Pack downloads!", color=0x00BFFF)
+        embedVar.add_field(name="Windows", value="||https://bte-installer.s3.amazonaws.com/public/installer/v1.11/BTEInstaller-1.11-windows.zip||", inline=False)
+        embedVar.add_field(name="Mac", value="||https://bte-installer.s3.amazonaws.com/public/installer/v1.11/BTEInstaller-1.11-mac.dmg||", inline=False)
+        embedVar.add_field(name="Universal", value="||https://bte-installer.s3.amazonaws.com/public/installer/v1.11/BTEInstaller-1.11-linux.tar.gz||", inline=False)
+        embedVar.add_field(name="Linux", value="||https://bte-installer.s3.amazonaws.com/public/installer/v1.11/BTEInstaller-1.11-universal.jar||", inline=False)
+        await message.channel.send(embed=embedVar)
+
 #Other commands
 
 @bot.command(pass_context=True)
 async def about(ctx):
-    await ctx.send("To find more infomation make sure you read #faq and #rules, as it will tell you some important infomation.")
+    await ctx.send("Welcome to Build The Earth Nordic+Baltic!! We are a community dedicated towards creating the world as it stands today in Minecraft, 1:1 scale. Our group is building Sweden, Norway, Denmark, Finland, Lithuania, Latvia, Estonia and Iceland!")
 
 @bot.command(pass_context=True)
 async def aboutbot(ctx):
@@ -84,7 +111,7 @@ async def on_ready():
     print(f"Bot logged on as {bot.user.name}({bot.user.id})")
     print("_____")
     guild_count = len(list(bot.guilds))
-    pstatus = f"= | Nordic + Baltic"
+    pstatus = f"=HELP | Nordic + Baltic"
     onreadyembed=discord.Embed(title="Bot connected",description=f"Bot logged on as {bot.user.name} ({bot.user.id})", color=0x4bff68)
     onreadyembed.timestamp=datetime.utcnow()
     await bot_log_channel.send(embed=onreadyembed)

@@ -26,5 +26,9 @@ class Basic(commands.Cog):
     async def gang(self, ctx):
         await ctx.send("***Nordic + Baltic Gang***")
 
+    @commands.command(description="A command that tells you what version were on!")
+    async def version(self, ctx):
+        await ctx.send("The current version we are on is **V1.3**, we frequently update our bot. This update we have added this command and fixed some features!")
+
 def setup(bot):
     bot.add_cog(Basic(bot))

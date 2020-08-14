@@ -34,6 +34,7 @@ class Admin(commands.Cog):
         presence = presence.replace('[site]', "https://github.com/Mileven1/BTEbot")
         await self.bot.change_presence(activity=discord.Game(name=presence))
         await ctx.send(f":ok_hand::computer: Bot presence set to `{presence}`")
+        await ctx.send("Bot is now updated successfully!")
         setpresenceembed=discord.Embed(title="Bot presence set",description=f"**New Presence:** `{presence}`\n**Set by:** {ctx.message.author}",color=0xff6fe1)
         setpresenceembed.timestamp=datetime.utcnow()
         await bot_log_channel.send(embed=setpresenceembed)
@@ -45,6 +46,7 @@ class Admin(commands.Cog):
         closingembed = discord.Embed(title="Bot closed", color=0xff2121)
         closingembed.timestamp=datetime.utcnow()
         await bot_log_channel.send(embed=closingembed)
+        await ctx.send("Bot is now closed sucessfully @CaptainJackHarkness#6942, if this is an error please check logs.")
         await self.bot.close()
 
     @commands.command(hidden=True)
