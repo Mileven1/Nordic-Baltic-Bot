@@ -21,7 +21,7 @@ bot.remove_command('help')
 @bot.command(pass_context=True)
 async def help(message):
         embedVar = discord.Embed(title="Nordic + Baltic Bot Commands", description = "Please do not spam these commands or misuse them! Use = for each command.", color=0x9400D3)
-        embedVar.add_field(name="Basic", value="welcome, about,applications, guide, documentation.", inline=False)
+        embedVar.add_field(name="Basic", value="welcome, about, applications, guide, documentation.", inline=False)
         embedVar.add_field(name="Support Commands", value="support, ip, coords, tpll, schematics, builder, waypoint, download, measure.", inline=False)
         embedVar.add_field(name="Other", value="aboutbot, ping.", inline=False)
         embedVar.add_field(name="Poll", value="poll, mpoll.", inline=False)
@@ -36,7 +36,7 @@ async def support(ctx):
 
 @bot.command(pass_context=True)
 async def ip(ctx):
-    await ctx.send("Our IP is currently: **GAME-PL-01.MTXSERV.COM:27070**! Do .status to check the server stats...")
+    await ctx.send("Our IP is currently: **GAME-PL-01.MTXSERV.COM:27070**! Do .status to check the servers status")
 
 @bot.command(pass_context=True)
 async def coords(ctx):
@@ -72,7 +72,7 @@ async def documentation(ctx):
 
 @bot.command(pass_context=True)
 async def applications(ctx):
-    await ctx.send("Please visit #applications for staff roles or use this weblink to join the build team: buildtheearth.net/bte-Nordic and press join!")
+    await ctx.send("Please visit #applications for staff roles or use this link to join the build team: buildtheearth.net/bte-Nordic and press join!")
 
 @bot.command(pass_context=True)
 async def download(message):
@@ -87,15 +87,15 @@ async def download(message):
 
 @bot.command(pass_context=True)
 async def about(ctx):
-    await ctx.send("Welcome to Build The Earth Nordic+Baltic!! We are a community dedicated towards creating the world as it stands today in Minecraft, 1:1 scale. Our group is building Sweden, Norway, Denmark, Finland, Lithuania, Latvia, Estonia and Iceland!")
+    await ctx.send("Welcome to Build The Earth Nordic+Baltic!! We are a community dedicated towards creating the world as it stands today in Minecraft, 1:1 scale. Our team is building Sweden, Norway, Denmark, Finland, Lithuania, Latvia, Estonia and Iceland!")
 
 @bot.command(pass_context=True)
 async def aboutbot(ctx):
-    await ctx.send("This bot was created for Nordic + Baltic, it was built by @CaptainJackHarkness#6942! Any problems feel free to contact me.")
+    await ctx.send("This bot was coded for Nordic + Baltic, it was built by @CaptainJackHarkness#6942 and @Tinonb#1600! Any problems feel free to contact me.")
 
 @bot.command(pass_context=True)
 async def welcome(message):
-        embedVar = discord.Embed(title="Welcome to the Nordic + Baltic Built Team!", description = "Our built team focuses on Sweden, Denmark, Norway, Iceland, Estonia, Lithuania and Iatvia", color=0x00BFFF)
+        embedVar = discord.Embed(title="Welcome to the Nordic + Baltic Build Team!", description = "Our build team focuses on Sweden, Denmark, Norway, Iceland, Estonia, Lithuania and Iatvia", color=0x00BFFF)
         embedVar.add_field(name="About", value="To find more infomation make sure you read #faq and #rules, as it will tell you some important infomation.", inline=False)
         embedVar.add_field(name="Support", value="If you need any support feel free to ask in #support and one of our friendly staff will answer your questions.", inline=False)
         embedVar.add_field(name="What is BTE", value="Built The Earth is a massive project that is building the whole earth in Minecraft, if you want to learn more make sure you join the official discord server: https://discord.gg/PYPtHMf", inline=False)
